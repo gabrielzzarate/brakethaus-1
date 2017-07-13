@@ -1,1 +1,3 @@
-console.log("Up and Running");
+let testFunc = () => 'Up and Running';
+
+console.log(testFunc());

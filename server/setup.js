@@ -1,13 +1,13 @@
-let express = require('express');
-let path = require('path');
-let favicon = require('serve-favicon');
-let logger = require('morgan');
-let cookieParser = require('cookie-parser');
-let bodyParser = require('body-parser');
-let http = require('http');
-let cons = require('consolidate');
+import express from 'express';
+import path from 'path';
+import favicon from 'serve-favicon';
+import logger from 'morgan';
+import cookieParser from 'cookie-parser';
+import bodyParser from 'body-parser';
+import http from 'http';
+import cons from 'consolidate';
 
-module.exports = {
+export default {
     exp: express,
     path: path,
     fav: favicon,

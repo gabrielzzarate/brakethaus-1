@@ -65,12 +65,16 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-/**
- * Created by avantbaker on 7/13/17.
- */
-console.log("Up and Running");
+"use strict";
+
+
+var testFunc = function testFunc() {
+  return 'Up and Running';
+};
+
+console.log(testFunc());
 
 /***/ })
 /******/ ]);
