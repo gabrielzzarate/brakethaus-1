@@ -1,4 +1,4 @@
-# brakethaus
+# Braket Haüs
 Braket Haüs :: Production Site
 
 Description:
