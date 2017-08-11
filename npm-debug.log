@@ -1,8 +1,9 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/usr/local/Cellar/node/7.6.0/bin/node',
-1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   '/usr/local/lib/node_modules/npm/bin/npm-cli.js',
 1 verbose cli   'run',
-1 verbose cli   'start' ]
+1 verbose cli   'start',
+1 verbose cli   '--scripts-prepend-node-path=auto' ]
 2 info using npm@4.1.2
 3 info using node@v7.6.0
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
@@ -28,7 +29,7 @@
 15 verbose pkgid brakethaus@1.0.0
 16 verbose cwd /Users/avantbaker/brakethaus
 17 error Darwin 16.7.0
-18 error argv "/usr/local/Cellar/node/7.6.0/bin/node" "/usr/local/bin/npm" "run" "start"
+18 error argv "/usr/local/Cellar/node/7.6.0/bin/node" "/usr/local/lib/node_modules/npm/bin/npm-cli.js" "run" "start" "--scripts-prepend-node-path=auto"
 19 error node v7.6.0
 20 error npm  v4.1.2
 21 error code ELIFECYCLE

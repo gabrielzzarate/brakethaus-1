@@ -1,7 +1,7 @@
 // Placed Modules in SHM Object to make file cleaner
 // Contains: Express, Logger, Morgan, BodyParser, Cookie Parser, Path, Consolidate, and HTTP
 import SERVER_HELPER_MODULES from './setup';
-console.log("Directory Name", SERVER_HELPER_MODULES.path.join(__dirname, '../src'));
+console.log("Directory Name", SERVER_HELPER_MODULES.path.join(__dirname, '../app'));
 // Temporary Placement of Routes
 // TODO: Replace with Bootstrapper function
 import Index from './routes';
@@ -17,7 +17,7 @@ app.use(SERVER_HELPER_MODULES.ckPrsr());
 
 // Temporary Placement of Static Resource Location
 app.use(SERVER_HELPER_MODULES.exp.static( SERVER_HELPER_MODULES.path.join(__dirname, './') ));
-app.use('/src', SERVER_HELPER_MODULES.exp.static( SERVER_HELPER_MODULES.path.join(__dirname,'../src' ) ));
+app.use('/app', SERVER_HELPER_MODULES.exp.static( SERVER_HELPER_MODULES.path.join(__dirname,'../app/' ) ));
 
 app.set('port', 8888);
 app.set('host', 'http://localhost:' + app.get('port') + '/');
