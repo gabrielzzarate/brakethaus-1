@@ -4,7 +4,7 @@
   "description": "The Future",
   "main": "index.js",
   "scripts": {
-    "start": "node server",
+    "start": "node src/server",
     "build": "webpack"
   },
   "repository": {

@@ -1,9 +1,9 @@
 module.exports = {
 
-    entry: "./src",
+    entry: "./src/app",
 
     output: {
-        filename: "./server/app.js"
+        filename: "./src/server/app.js"
     },
 
     module: {
