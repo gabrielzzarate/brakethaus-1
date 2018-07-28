@@ -9,7 +9,6 @@ import Index from './routes';
 // Express App
 let app = SERVER_HELPER_MODULES.exp();
 
-
 app.use(SERVER_HELPER_MODULES.lgr('dev'));
 app.use(SERVER_HELPER_MODULES.bdyPrsr.json());
 app.use(SERVER_HELPER_MODULES.bdyPrsr.urlencoded({ extended: false }));
@@ -19,8 +18,7 @@ app.use(SERVER_HELPER_MODULES.ckPrsr());
 app.use(SERVER_HELPER_MODULES.exp.static( SERVER_HELPER_MODULES.path.join(__dirname, './') ));
 app.use('/app', SERVER_HELPER_MODULES.exp.static( SERVER_HELPER_MODULES.path.join(__dirname,'../app/' ) ));
 
-app.set('port', 8888);
-app.set('host', 'http://localhost:' + app.get('port') + '/');
+app.set('port', 3000);
 app.set('x-powered-by', false);
 app.engine('html', SERVER_HELPER_MODULES.cons.lodash);
 app.set('view engine', 'html');
@@ -31,4 +29,4 @@ app.use('/', Index);
 
 let server = SERVER_HELPER_MODULES.http.createServer(app);
 
-server.listen(app.get('port'));
+server.listen(app.get('port'), 'localhost');
