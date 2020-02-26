@@ -1,29 +1,49 @@
+const path = require('path');
+const plugins = require('./webpack/plugins');
+
 module.exports = {
-
     entry: "./src/app",
-
     output: {
-        filename: "./src/server/app.js"
+        path: path.resolve(__dirname, './dist'),
+        filename: '[name].bundle.js',
+        publicPath: '/',
     },
-
+    devtool: 'source-map',
     module: {
-        loaders: [
+        rules: [
             {
-                test: /\.jsx?$/,
-                loader: 'babel-loader',
+                test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-                include: __dirname,
-                query: {
-                    presets: ['react-hmre','es2015', 'stage-0', 'react'],
-                    plugins: ['transform-decorators-legacy']
+                use: {
+                    loader: "babel-loader"
                 }
             }
         ],
     },
-
+    plugins: [
+        plugins.HtmlWebpackPlugin
+    ],
     resolve: {
-        extensions: [".js", ".jsx"]
+        extensions: [".webpack.js",
+            ".js", ".jsx"
+        ],
+        modules: [
+            path.resolve(__dirname, 'src'),
+            'node_modules',
+        ],
     },
-
-    watch: false
+    devServer: {
+        host: '0.0.0.0',
+        watchContentBase: true,
+        contentBase: '.',
+        hot: true,
+        inline: false,
+        disableHostCheck: true,
+        historyApiFallback: true,
+        watchOptions: {
+            ignored: [
+                path.resolve(__dirname, 'node_modules'),
+            ]
+        }
+    }
 };

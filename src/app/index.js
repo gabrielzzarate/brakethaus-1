@@ -1,3 +1,8 @@
-let testFunc = () => 'Up and Running';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-console.log(testFunc());
+import App from './App';
+
+ReactDOM.render(
+  <App />, document.getElementById('root')
+);
