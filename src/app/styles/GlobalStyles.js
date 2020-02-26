@@ -30,7 +30,7 @@ const GlobalStyles = createGlobalStyle`
   /* typography */
 
   h1 {
-    
+    margin: 0 0 20px 0;
 
     &.display {
       font-family: "Horatio";

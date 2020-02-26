@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const StyledHero = styled.div`
   position: relative;
+  height: 1100px;
   display: flex;
   flex-direction: column;
   align-content: flex-end;
@@ -15,6 +16,13 @@ const StyledHero = styled.div`
     margin: 0 auto;
   }
 
+  h3 {
+    font-family: 'Horatio';
+    font-size: 48px;
+    letter-spacing: 1.72px;
+    line-height: 64px;
+    margin-bottom: 0;
+  }
   
 `;
 

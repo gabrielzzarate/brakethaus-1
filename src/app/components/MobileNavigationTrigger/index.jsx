@@ -23,7 +23,7 @@ const StyledTrigger = styled.div`
     top: 50%;
     height: 2px;
     width: 24px;
-    background: #fff;
+    background: ${theme.black};
     transition: all .35s;
 
     &:nth-of-type(1) {
