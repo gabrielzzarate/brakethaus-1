@@ -1,5 +1,6 @@
 const path = require('path');
 const plugins = require('./webpack/plugins');
+const loaders = require('./webpack/loaders');
 
 module.exports = {
     entry: "./src/app",
@@ -17,7 +18,9 @@ module.exports = {
                 use: {
                     loader: "babel-loader"
                 }
-            }
+            },
+            loaders.AssetLoader,
+            loaders.FontLoader
         ],
     },
     plugins: [

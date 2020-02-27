@@ -27,6 +27,7 @@
     "consolidate": "^0.14.5",
     "cookie-parser": "^1.4.3",
     "debug": "^2.6.8",
+    "file-loader": "^5.1.0",
     "history": "^4.6.3",
     "immutable": "^3.8.1",
     "morgan": "^1.8.2",
