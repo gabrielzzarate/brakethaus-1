@@ -19,7 +19,16 @@ module.exports = {
                     loader: "babel-loader"
                 }
             },
-            loaders.AssetLoader,
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                    use: {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[path][name].[ext]?[hash]',
+                        },
+                    },
+            },
+            // loaders.AssetLoader,
             loaders.FontLoader
         ],
     },

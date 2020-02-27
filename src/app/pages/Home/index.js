@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Page from '../../components/Page';
 import HeroHomepage from '../../components/HeroHomepage';
 import ServicesSection from '../../components/ServicesSection';
+import background from '../../static/homepage_bg_top.png';
 
 const StyledHome = styled.div`
   position: relative;
@@ -22,7 +23,7 @@ const Home = () => (
       <ServicesSection />
     </Page>
 
-    <img className="bg_top" src="/src/app/static/homepage_bg_top.png" alt="home background" />
+    <img className="bg_top" src={background} alt="home background" />
   </StyledHome>
 );
 

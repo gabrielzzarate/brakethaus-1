@@ -7,9 +7,10 @@ import { Container, Section, Row } from '../../styles';
 import InputField from '../InputField';
 import Logo from '../Logo';
 import Button from '../Button';
+import footerBackground from '../../static/footer_bg';
 
 const StyledFooter = styled(Section)`
-  background: url('/src/app/static/footer_bg.jpg') center center no-repeat;
+  background: url(${footerBackground}) center center no-repeat;
   background-size: cover;
   display: flex;
 

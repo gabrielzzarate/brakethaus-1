@@ -1,13 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 import { breakpoints } from '../lib/breakpoints';
 import theme from '../theme';
+import horatioWoff2 from '../static/HoratioLTStd-Bold.woff2';
+import horatioWoff from '../static/HoratioLTStd-Bold.woff';
 
 const GlobalStyles = createGlobalStyle`
 
   @font-face {
     font-family: "Horatio";
-    src: url("/src/app/static/HoratioLTStd-Bold.woff2"),
-        url("/src/app/static/HoratioLTStd-Bold.woff");
+    src: url(${horatioWoff2}),
+        url(${horatioWoff});
   }
 
   html {

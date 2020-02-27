@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import homepageBackground from '../../static/homepage_bg.png';
 
 const StyledHero = styled.div`
   position: relative;
@@ -8,7 +9,7 @@ const StyledHero = styled.div`
   flex-direction: column;
   align-content: flex-end;
   justify-content: center;
-  background: url('/src/app/static/homepage_bg.png') top left no-repeat;
+  background: url(${homepageBackground}) top left no-repeat;
   background-size: 100% auto;
 
   .heroContent {

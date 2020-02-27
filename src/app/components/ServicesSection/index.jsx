@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Section, Container, Row } from '../../styles';
+import technologiesLogos from '../../static/techologies_logos.png';
 
 const StyledServicesSection = styled(Section)`
 
@@ -19,7 +20,7 @@ const ServicesSection = () => (
           <h1 className="display">Full Service Creative</h1>
         </div>
         <div className="column">
-          <img src="/src/app/static/techologies_logos.png" alt="Technologies" />
+          <img src={technologiesLogos} alt="Technologies" />
         </div>
       </Row>
     </Container>
